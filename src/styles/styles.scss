@@ -1,0 +1,27 @@
+@import "components/variables";
+@import "components/containers/container";
+@import "components/containers/card";
+@import "components/utilities/typography/text";
+@import "components/utilities/margin";
+@import "components/form/formItems";
+@import "components/utilities/typography/link";
+@import "components/utilities/display/display";
+@import "components/layouts/navbar";
+@import "components/tasks/tasks";
+@import "components/utilities/modal";
+
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', 'sans-serif';
+}
+
+body{
+    padding:0;
+    margin:0;
+}
+.px{
+    padding: {
+        right: 20px;
+        left: 20px;
+    }
+}

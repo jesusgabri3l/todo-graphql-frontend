@@ -1,0 +1,16 @@
+.container{
+    min-height: 100vh;
+    background-color: $BACKGROUND-COLOR;
+    &__flex{
+        display: flex;
+        width: 100%;
+        &--center{
+            min-height: 100vh;
+            align-items: center;
+            justify-content: center;
+        }
+        &--profile{
+            min-height: calc(100vh - 80px);
+        }
+    }
+}

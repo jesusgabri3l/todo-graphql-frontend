@@ -1,0 +1,13 @@
+.d-flex{
+    width: 100%;
+    display:flex;
+    &--center{
+        justify-content: center;
+    }
+    &--column{
+        flex-direction: column;
+    }
+    &--aligncenter{
+        align-items: center;
+    }
+}

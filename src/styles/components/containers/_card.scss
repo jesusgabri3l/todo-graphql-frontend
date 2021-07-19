@@ -1,0 +1,60 @@
+.card{
+    min-width: 30%;
+    min-height: 60%;
+    padding: 20px 60px;
+    &--auth{
+        width: 40%;
+        border-radius: 16px;
+        position: relative;
+        top: -15px;
+        @media only screen and (max-width: $TABLETS) {
+            width: 60%;
+        }
+        @media only screen and (max-width: $S-TABLETS) {
+            width: 70%;
+        }
+        @media only screen and (max-width: $M-PHONE) {
+            width: 100%;
+        }
+        .card__link{
+            position: relative;
+            bottom: -60px;
+            text-align: center;
+            font-size: 14px;
+            color: $GRAY-DARK-COLOR;
+            letter-spacing:0.8px;
+            @media only screen and (max-width: $M-PHONE) {
+                font-size: 13px;
+                bottom: -80px;
+            }
+            @media only screen and (max-width: $S-PHONE) {
+                font-size: 13px;
+                bottom: -35px;
+            }
+        }
+    }
+    &--modal{
+        padding: 0px;
+        padding-right: 30px;
+    }
+    &__title{
+        text-align: center;
+        padding-bottom: 10px;
+        &__img{
+            width: 80px;
+            @media only screen and (max-width: $S-PHONE) {
+                width: 60px;
+            }
+        }   
+    }
+    &__text{
+        text-align: center;
+        color : $GRAY-DARK-COLOR;
+        letter-spacing: 0.8px;
+        font-size: 14px;
+        line-height: 20px;
+        @media only screen and (max-width: $S-PHONE) {
+            font-size: 13px;
+        }
+    }
+}

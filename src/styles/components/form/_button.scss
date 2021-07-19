@@ -1,0 +1,44 @@
+.button{
+    min-width: 12rem;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 32px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    font-size: 15px;
+    transition: all 0.4s;
+    &:hover{
+        transform: scale(1.04)
+    }
+    cursor : pointer;
+    &--block{
+        display:block;
+        width: 100%;
+    }
+
+    &--primary{
+        background-color: $PRIMARY-COLOR;
+        color: $WHITE-COLOR;
+        font-weight: 500;
+    }
+
+    &--back{
+        min-width: 50px ;
+        height: 50px !important;
+        padding: 0 !important;
+        border-radius: 50%;
+        position: absolute;
+        top: 50px;
+        left: 60px;
+        background-color: $PRIMARY-COLOR;
+        border: 5px solid $ELEMENT-COLOR;
+        color : $WHITE-COLOR;
+    }
+    &--logout{
+       background-color : $RED-COLOR;
+       min-width: 10px; 
+       position: absolute;
+       left: 30px;
+       top: 100px;
+       color: $WHITE-COLOR;
+    }
+}

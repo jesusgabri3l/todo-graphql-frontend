@@ -1,18 +1,22 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
-  </div>
+  <Login v-if="!user.isLogged"/>
+  <Tasks v-else/>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
+import {useStore} from 'vuex'
+import Login from '@/views/auth/Login.vue';
+import Tasks from './tasks/Tasks.vue';
 
 export default defineComponent({
   name: 'Home',
-  components: {
-    HelloWorld,
-  },
+  components: {Login, Tasks},
+  setup () 
+    {
+        const store = useStore()
+        const user = store.state.user
+        return {user};
+    }
 });
 </script>

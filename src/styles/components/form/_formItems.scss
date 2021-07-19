@@ -1,0 +1,43 @@
+@import "button";
+.form{
+    &__item{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        &:first-child{
+            margin-top:0;
+        }
+    }
+}
+
+.label{
+    color: $GRAY-LIGHT-COLOR;
+    margin-bottom: 8px;
+    padding-left: 15px;
+    font-size: 12px;
+    letter-spacing: 0.8px;
+}
+
+.input{
+    width: 100%;
+    border: none;
+    background-color: $ELEMENT-COLOR;
+    padding: 15px 30px;
+    border-radius: 32px;
+    outline:  none;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    color : $GRAY-LIGHT-COLOR;
+    letter-spacing: 0.8px;
+    transition: 0.3s all;
+    font-size: 14px;
+    &:focus{
+        border: .5px solid $PRIMARY-COLOR;
+    }
+}
+
+textarea{
+    resize:none;
+    min-height: 100px;
+    overflow: auto;
+}
